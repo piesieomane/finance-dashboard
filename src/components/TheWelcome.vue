@@ -1,12 +1,18 @@
 <script setup>
 import Navbar from "./Navbar.vue";
+import Sidebar from "./Sidebar.vue";
 </script>
 
 <template>
   <div>
     <Navbar />
-    <h1 class="text-4xl text-center">
-      Welcome to Tailwind CSS 3 with Vue js 3
-    </h1>
+    <div>
+      <div class="w-1/5">
+        <Sidebar />
+      </div>
+      <div class="w-4/5">
+        <router-view />
+      </div>
+    </div>
   </div>
 </template>
