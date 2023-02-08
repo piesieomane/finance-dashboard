@@ -5,7 +5,7 @@ import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <div class="h-screen">
+  <div class="h-screen text-xs">
     <Navbar />
     <div class="flex flex-row">
       <div class="w-1/5">
