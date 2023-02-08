@@ -1,10 +1,14 @@
 <script>
 import Hi from "../components/Hi.vue";
 import RevenueVue from "../components/Revenue.vue";
+import SolidChart from "../components/SolidChart.vue"
+import Orders from "../components/Table.vue";
 export default {
   components: {
     Hi,
     RevenueVue,
+    SolidChart,
+    Orders,
   },
   data() {
     return {
@@ -86,7 +90,10 @@ export default {
         </div>
         <RevenueVue />
       </div>
-      <div class="'w-[30%]'"><p>lorem10</p></div>
+      <div class=" border-spacing-1 border-2 border-slate-800 rounded-3xl p-4"><SolidChart/></div>
+    </div>
+    <div>
+      <Orders />
     </div>
   </div>
 </template>
