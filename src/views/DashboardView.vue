@@ -46,7 +46,7 @@ export default {
 };
 </script>
 <template>
-  <div class="p-6 flex flex-col">
+  <div class="p-6 flex flex-col overflow-y-scroll max-h-screen">
     <div class="flex flex-row justify-between">
       <div class="w-[30%]">
         <Hi
