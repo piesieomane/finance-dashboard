@@ -12,8 +12,8 @@
         <ul class="space-y-6">
           <button class="w-full">
             <li>
-              <a
-                href="#"
+              <router-link
+                to="/dashboard"
                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-400 active:bg-violet-700 dark:hover:bg-gray-700"
               >
                 <svg
@@ -27,13 +27,13 @@
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                 </svg>
                 <span class="ml-3">Dashboard</span>
-              </a>
+              </router-link>
             </li>
           </button>
           <button class="w-full">
             <li>
-              <a
-                href="#"
+              <router-link
+                to="/about"
                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-400 active:bg-violet-700 dark:hover:bg-gray-700"
               >
                 <!-- svg for statistics -->
@@ -51,7 +51,7 @@
                   ></path>
                 </svg>
                 <span class="ml-3">Statistics</span>
-              </a>
+              </router-link>
             </li>
           </button>
           <button class="w-full">
