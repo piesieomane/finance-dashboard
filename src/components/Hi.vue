@@ -1,15 +1,22 @@
 <script>
 export default {
-  props: ["title", "price", "message", "color"],
+  props: [
+    "title",
+    "price",
+    "message",
+    "color",
+    "percentage",
+    "percentagewheel",
+  ],
   data(props) {
-    // console.log("DDDDDD", props.price);
+    //console.log("DDDDDD", props.percentagewheel, props.percentage, props.title);
     return { props };
   },
 };
 </script>
 <template>
   <div
-    class="flex flex-row items-center justify-between border-spacing-1 border-2 border-slate-800 rounded-3xl p-4"
+    class="flex flex-row items-center justify-between border-spacing-1 border-2 rounded-3xl p-4"
   >
     <div class="flex flex-col">
       <h4 class="font-bold">{{ title }}</h4>
@@ -35,13 +42,15 @@ export default {
             :stroke="props.color"
             stroke-width="4"
             stroke-dasharray="282.74"
-            stroke-dashoffset="71.18"
+            :stroke-dashoffset="props.percentagewheel"
           />
         </svg>
         <div
           class="absolute top-0 left-0 h-full w-full flex items-center justify-center"
         >
-          <div class="text-3xl text-center text-black-500">75%</div>
+          <div class="text-3xl text-center text-black-500">
+            {{ props.percentage }}
+          </div>
         </div>
       </div>
     </div>

@@ -33,7 +33,16 @@ export default {
         </thead>
         <tbody>
           <tr class="">
-            <td class="px-4 py-2">Product 1</td>
+            <td
+              class="px-4 py-2 flex flex-row items-center justify-items-center justify-center space-x-2"
+            >
+              <img
+                class="w-8 h-8 p-1 rounded-md ring-2 ring-gray-300 dark:ring-gray-500"
+                src="./images/logo.svg"
+                alt="Rounded avatar"
+              />
+              <p>Product 1</p>
+            </td>
             <td class="px-4 py-2">#0001</td>
             <td class="px-4 py-2">01/01/2022</td>
             <td class="px-4 py-2">John Doe</td>
@@ -46,7 +55,16 @@ export default {
             </td>
           </tr>
           <tr class="">
-            <td class="px-4 py-2">Product 2</td>
+            <td
+              class="px-4 py-2 flex flex-row items-center justify-items-center justify-center space-x-2"
+            >
+              <img
+                class="w-8 h-8 p-1 rounded-md ring-2 ring-gray-300 dark:ring-gray-500"
+                src="./images/logo.svg"
+                alt="Rounded avatar"
+              />
+              <p>Product 2</p>
+            </td>
             <td class="px-4 py-2">#0002</td>
             <td class="px-4 py-2">02/01/2022</td>
             <td class="px-4 py-2">Jane Doe</td>

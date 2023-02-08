@@ -20,6 +20,8 @@ export default {
             price: "$20.4k",
             message: "We have sold 123 items",
             color: "#2563eb",
+            percentage: "75%",
+            percentagewheel: "71"
           },
         },
         {
@@ -29,6 +31,8 @@ export default {
             price: "$8.2k",
             message: "Available to payout",
             color: "#65a30d",
+            percentage: "80%",
+            percentagewheel: "50"
           },
         },
         {
@@ -38,6 +42,8 @@ export default {
             price: "$18.2k",
             message: "Available to payout",
             color: "#f97316",
+            percentage: "60%",
+            percentagewheel: "100"
           },
         },
       ],
@@ -54,6 +60,8 @@ export default {
           :price="items[0].post.price"
           :message="items[0].post.message"
           :color="items[0].post.color"
+          :percentage="items[0].post.percentage"
+          :percentagewheel="items[0].post.percentagewheel"
         />
       </div>
       <div class="w-[30%]">
@@ -62,6 +70,8 @@ export default {
           :price="items[1].post.price"
           :message="items[1].post.message"
           :color="items[1].post.color"
+          :percentage="items[1].post.percentage"
+          :percentagewheel="items[1].post.percentagewheel"
         />
       </div>
       <div class="w-[30%]">
@@ -70,12 +80,14 @@ export default {
           :price="items[2].post.price"
           :message="items[2].post.message"
           :color="items[2].post.color"
+          :percentage="items[2].post.percentage"
+          :percentagewheel="items[2].post.percentagewheel"
         />
       </div>
     </div>
     <div class="flex flex-row items-center justify-between mt-6">
       <div
-        class="w-[60%] border-spacing-1 border-2 border-slate-800 rounded-3xl p-4"
+        class="w-[60%] border-spacing-1  border-2 rounded-xl  p-4"
       >
         <div class="flex flex-row justify-between">
           <h2 class="text-xl font-bold">Total Revenue</h2>
@@ -90,7 +102,7 @@ export default {
         </div>
         <RevenueVue />
       </div>
-      <div class=" border-spacing-1 border-2 border-slate-800 rounded-3xl p-4"><SolidChart/></div>
+      <div class=" border-spacing-1 h-auto  border-2 rounded-xl p-4"><SolidChart/></div>
     </div>
     <div>
       <Orders />
