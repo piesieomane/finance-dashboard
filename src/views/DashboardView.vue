@@ -1,8 +1,10 @@
 <script>
 import Hi from "../components/Hi.vue";
+import RevenueVue from "../components/Revenue.vue";
 export default {
   components: {
     Hi,
+    RevenueVue,
   },
   data() {
     return {
@@ -40,7 +42,7 @@ export default {
 };
 </script>
 <template>
-  <div class="p-6">
+  <div class="p-6 flex flex-col">
     <div class="flex flex-row justify-between">
       <div class="w-[30%]">
         <Hi
@@ -66,6 +68,25 @@ export default {
           :color="items[2].post.color"
         />
       </div>
+    </div>
+    <div class="flex flex-row items-center justify-between mt-6">
+      <div
+        class="w-[60%] border-spacing-1 border-2 border-slate-800 rounded-3xl p-4"
+      >
+        <div class="flex flex-row justify-between">
+          <h2 class="text-xl font-bold">Total Revenue</h2>
+          <div class="flex flex-row items-center justify-between">
+            <p class="mr-2">Data Updates Every 3 Hours</p>
+            <button class="bg-[#e2e8f0] p-2 rounded-sm">View All Orders</button>
+          </div>
+        </div>
+        <div class="flex flex-row w-[30%] justify-between items-center">
+          <h1 class="text-2xl font-semibold">$50.4k</h1>
+          <p class="text-[#65a30d]">8% than last month <span>&#8593</span></p>
+        </div>
+        <RevenueVue />
+      </div>
+      <div class="'w-[30%]'"><p>lorem10</p></div>
     </div>
   </div>
 </template>
