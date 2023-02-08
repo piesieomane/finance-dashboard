@@ -52,7 +52,7 @@ export default {
 };
 </script>
 <template>
-  <div class="p-6 flex flex-col overflow-y-scroll max-h-screen">
+  <div class="p-6 flex flex-col bg-scroll  hover:overflow-y-scroll max-h-screen">
     <div class="flex flex-row justify-between">
       <div class="w-[30%]">
         <Hi
@@ -96,7 +96,7 @@ export default {
             <button class="bg-[#e2e8f0] p-2 rounded-sm">View All Orders</button>
           </div>
         </div>
-        <div class="flex flex-row w-[30%] justify-between items-center">
+        <div class="flex flex-row w-[35%] justify-between items-center">
           <h1 class="text-2xl font-semibold">$50.4k</h1>
           <p class="text-[#65a30d]">8% than last month <span>&#8593</span></p>
         </div>
