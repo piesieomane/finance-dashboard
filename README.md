@@ -1,4 +1,6 @@
-# vue
+# Finance-Dashboard
+
+Link [Preview](https://wondrous-klepon-1c45cd.netlify.app/dashboard)
 
 This template should help get you started developing with Vue 3 in Vite.
 
